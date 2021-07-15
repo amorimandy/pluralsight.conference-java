@@ -16,9 +16,9 @@ public class Application {
         System.out.println(service.findAll().get(0).getFirstName());
         System.out.println(service.findAll().get(0).getLastName());
 
-        //testing scopes
-        //SpeakerService service2 = appContext.getBean("speakerService", SpeakerService.class);
-        //System.out.println(service2);
+        //testing scopes singletons
+        SpeakerService service2 = appContext.getBean("speakerService", SpeakerService.class);
+        System.out.println(service2);
 
     }
 }
